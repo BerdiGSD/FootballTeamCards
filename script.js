@@ -174,5 +174,17 @@ const myFavoriteFootballTeam = {
 
 Object.freeze(myFavoriteFootballTeam)
 
-const sport = myFavoriteFootballTeam.sport;
-myFavoriteFootballTeam
+// const sport = myFavoriteFootballTeam.sport;
+// const team = myFavoriteFootballTeam.team;
+// This can be rewritten using object destructuring syntax as follows
+const {sport, team, year, players} = myFavoriteFootballTeam;
+const {coachName} = myFavoriteFootballTeam.headCoach;
+
+typeOfSport.textContent = sport;
+teamName.textContent = team;
+worldCupYear.textContent = year;
+headCoach.textContent = coachName;
+
+const setPlayerCards = (arr = players)) => {
+
+}
