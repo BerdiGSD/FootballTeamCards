@@ -189,7 +189,7 @@ const setPlayerCards = (arr = players) => {
     playerCards.innerHTML += arr.map(({name, position, number, isCaptain, nickname}) => {
         `
         <div> class="player-card">
-            <h2>${isCaptain === true ? "(Captain)" : "" } ${name}</h2>
+            <h2>${isCaptain === true ? "(Captain)" : ""} ${name}</h2>
         </div>
         `;
     });
